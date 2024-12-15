@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../personalBio.css">
+    <script>
+        let og = true;
+        let oldColor;
+        let oldTextColor;
+        let layerThirdHead;
+        let thirdLayerTextHead;
+        function changeColor(){
+            og=!og;
+            let displaybg = document.getElementById("div1");
+            let disTeBg = document.getElementById("div1");
+            let inHead = document.getElementById("headOnly");
+            let inHeadText = document.getElementById("headOnly");
+            if (og){
+                oldColor = "rgb(242, 228, 202)";
+                oldTextColor = "black";
+                layerThirdHead = "white";
+                thirdLayerTextHead = "black";
+            } else {
+                oldColor = "black";
+                oldTextColor = "white";
+                layerThirdHead = 'black';
+                thirdLayerTextHead = "white";
+            }
+            displaybg.style.color = oldTextColor;  
+            disTeBg.style.backgroundColor = oldColor;
+            inHead.style.backgroundColor = layerThirdHead;
+            inHeadText.style.color = thirdLayerTextHead;
+        }
+    </script>
+    <meta name="description" content="This is how you'll reach me and see some of my projects in other websites">
+</head>
+<body id="headOnly">
+    <div class="wrapper">
+        <header class="headingOnly">
+            <h1>Contact me!</h1>
+        </header>
+        <hr>
+        <nav class="navCover">
+            <ul class="outerUl">
+                <li class="outerLi"><a href="../../../homePage.html">Home</a>
+                <ul class="innerUl">
+                    <li class="innerLi"><a href="../resume.html">Resume</a></li>
+                    <li class="innerLi"><a href="contactMe.html">Contact me</a></li>
+                </ul>
+                </li>
+                <li class="notInMobile"><a href="../resume.html">Resume</a></li>
+                <li class="notInMobile"><a href="contactMe.html">Contact me</a></li>
+                <li class="outerLi"><a href="../../PersonalInfo/bucketList.html">Bucket Lists</a>
+                    <ul class="innerUl">
+                        <li class="innerLi"><a href="../../PersonalInfo/LifeExp/interestHobby.html">Hobbies</a></li>
+                        <li class="innerLi"><a href="../../PersonalInfo/LifeExp/travelPage.html">Travel page</a></li>
+                    </ul>
+                </li>
+                <li class="notInMobile"><a href="../../PersonalInfo/LifeExp/interestHobby.html">Hobbies</a></li>
+                <li class="notInMobile"><a href="../../PersonalInfo/LifeExp/travelPage.html">Travel page</a></li>
+            </ul>
+        </nav>
+        <div onclick="changeColor()" class="theOnlyClass" style="width: 50px;position:absolute;height: 120px;left: 85%;">
+            <div style="width: 5px;position: absolute;height: 100px;left: 25px;background-color: black;"></div>
+            <div style="width: 10px;position: absolute;top: 95px;left: 22.5px;height: 10px;border-radius: 100px;background-color: black;"></div>
+        </div>
+        <main id="div1">
+            <img class="usualImg" src="../../../../../lang.jpg" alt="picture">
+            <div class="texts">
+                <h2>Contact me here:</h2>
+                <p><a style="color: brown" href="mailto:ttran101@mylangara.ca">example@gmail.com</a></p>
+                <p>Phone: 0975009373</p>
+            </div>
+            <hr>
+            <div>
+                <p>My LinkIn:<a href="https://www.linkedin.com/in/trong-long-tran-4a749b319/">Trong Long Tran LinkIn</a></p>
+                <p>My GitHub:<a href="https://github.com/Longisrealll">Longisrealll</a></p>
+            </div>
+        </main>
+        <footer style="color: black"><p>Location: <a href="https://langara.ca/" rel="linkToWeb">Langara college</a><br>&copy; Trong Long Tran 2024</p>
+            <div id="upd"></div>
+            <script>
+                let k = document.lastModified;
+                document.getElementById('upd').innerHTML = k;
+            </script>
+        </footer>
+    </div>
+</body>
+</html>

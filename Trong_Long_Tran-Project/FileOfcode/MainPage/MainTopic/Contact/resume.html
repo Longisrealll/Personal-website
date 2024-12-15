@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../personalBio.css">
+    <script>
+        let og = true;
+        let oldColor;
+        let oldTextColor;
+        let ovrBackgr;
+        function changeColor(){
+            og=!og;
+            let displaybg = document.getElementById("div1");
+            let disTeBg = document.getElementById("div1");
+            let allBckgr = document.getElementById("backgrounds");
+            if (og){
+                oldColor = "rgb(242, 228, 202)";
+                oldTextColor = "black";
+                ovrBackgr = "white";
+            } else {
+                oldColor = "black";
+                oldTextColor = "white";
+                ovrBackgr = "black";
+            }
+            console.log(og)
+            displaybg.style.color = oldTextColor;  
+            disTeBg.style.backgroundColor = oldColor;
+            allBckgr.style.backgroundColor = ovrBackgr;
+        }
+    </script>
+    <meta name="description" content="Where Trong Long worked in the past and what am I capable of.">
+</head>
+<body id="backgrounds">
+    <header class="descandantOfHome">
+        <h1>The resume</h1>
+    </header>
+    <hr>
+    <div onclick="changeColor()" class="theOnlyClass" style="width: 50px;position:absolute;height: 120px;left: 85%;">
+        <div style="width: 5px;position: absolute;height: 100px;left: 25px;background-color: black;"></div>
+        <div style="width: 10px;position: absolute;top: 95px;left: 22.5px;height: 10px;border-radius: 100px;background-color: black;"></div>
+    </div>
+    <div class="descandantOfHomeMain">
+        <nav class="navCover">
+            <ul class="outerUl">
+                <li class="outerLi"><a href="../../homePage.html">Home</a>
+                <ul class="innerUl">
+                    <li class="innerLi"><a href="resume.html">Resume</a></li>
+                    <li class="innerLi"><a href="ContactMe/contactMe.html">Contact me</a></li>
+                </ul>
+                </li>
+                <li class="notInMobile"><a href="resume.html">Resume</a></li>
+                <li class="notInMobile"><a href="ContactMe/contactMe.html">Contact me</a></li>
+                <li class="outerLi"><a href="../PersonalInfo/bucketList.html">Bucket Lists</a>
+                    <ul class="innerUl">
+                        <li class="innerLi"><a href="../PersonalInfo/LifeExp/interestHobby.html">Hobbies</a></li>
+                        <li class="innerLi"><a href="../PersonalInfo/LifeExp/travelPage.html">Travel page</a></li>
+                    </ul>
+                </li>
+                <li class="notInMobile"><a href="../PersonalInfo/LifeExp/interestHobby.html">Hobbies</a></li>
+                <li class="notInMobile"><a href="../PersonalInfo/LifeExp/travelPage.html">Travel page</a></li>
+            </ul>
+        </nav>
+        <main id="div1">
+            <div class="texts">
+                <header>
+                    <h2>Trong Long Tran</h2>
+                </header>
+                    <div class="firstHalf">
+                        <h3>Skills</h3>
+                        <ul class="resOnly">
+                            <li>Barista Basic</li>
+                            <li>UI/UX: HTML, CSS, JavaScript</li>
+                            <li>Teamworking</li>
+                            <li>Visual design: Canva</li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <aside>
+                        <div>
+                            <h3>Education<br>Langara college (Full time)</h3>
+                            <p>2024- </p>
+                            <p><strong>Major: Computer Studies</strong></p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Experience</h3>
+                            <p><strong>Le Comptoire</strong></p>
+                            <dl><dt>Jun-Aug 2024</dt>
+                                <dd>Help 50% of kitchen work</dd>
+                                <dd>Serving with a 100% satisfaction</dd>
+                            </dl>
+                        </div>
+                        <hr>
+                    </aside>
+            </div>
+        </main>
+        <footer><p>Location: <a href="https://langara.ca/" rel="linkToWeb">Langara college</a><br>&copy; Trong Long Tran 2024</p>
+        <div id="upd"></div>
+        <script>
+            let k = document.lastModified;
+            document.getElementById('upd').innerHTML = k;
+        </script>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,498 @@
+*{
+    font-family: Verdana,  Tahoma, sans-serif, Helvetica, sans-serif;
+}
+header h1, header h4{
+    margin: 0;
+}
+body{
+    width: 100%;
+    margin: 0;
+    /* background-color: burlywood; */
+}
+h1{
+    font-size: 50px;
+}
+header{
+    text-align: center;
+    /* background-color: rgb(242, 228, 202); */
+}
+hr{
+    width: 90%;
+}
+nav{
+    top: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+li img{
+    object-fit: cover;
+}
+.usualImg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.mainOne{
+    background-color: burlywood;
+}
+nav .outerLi{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    left: 0;
+}
+nav .innerUl{
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    width: 85%;
+}
+/* nav .outerLi:hover .innerUl{
+    opacity: 1;
+    top: 90px;
+    z-index: 1;
+} */
+nav li{
+    background-color: rgb(251, 207, 125);
+    height: 100px;
+    width: 100%;
+    border: 2px solid black;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 35px 0;
+}
+nav .outerUl{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav a{
+    text-decoration: none;
+    color: purple;
+}
+nav a:hover{
+    color: black;
+}
+footer{
+    background-color: burlywood;
+    height: auto;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+}
+
+footer p{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+main{
+    min-height: 630px;
+    background-color: rgb(242, 228, 202);
+    width: 100%;
+}
+details p{
+    font-size: 20px;
+    text-align: center;
+}
+fieldset{
+    margin: 10px;
+}
+fieldset img{
+    object-fit:contain;
+    width: 100%;
+    height: 50%;
+}
+.texts li{
+    list-style-type: none;
+    display: inline;
+}
+.texts li img{
+    height: 200px;
+    width: 100%;
+}
+.texts li a{
+    color: black;
+    font-style: italic;
+}
+.texts a{
+    text-decoration: none;
+}
+.texts ul{
+    padding: 0;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.texts span{
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+}
+.texts summary img{
+    width: 100%;
+}
+.texts{
+    padding: 10px 20px 20px 20px;
+    height: auto;
+}
+.texts h2{
+    margin-top: 0;
+}
+
+.plan{
+    padding: 10px 20px 0 20px;
+    min-height: 500px;
+}
+.descandantOfHome{
+    color: black;
+    background-color: burlywood;
+}
+.descandantOfHomeMain{
+    background-color: rgb(242, 228, 202);
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+.changePosi{
+    clear: left;
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+header{
+    padding-top: 5px;
+}
+.navCover{
+    width: 100%;
+    margin-bottom: 0;
+}
+.resumePic{
+    height: 100%;
+}
+.firstHalf .resOnly{
+    width: auto;
+    display: inline-block;
+}
+.firstHalf .resOnly li{
+    display: block;
+    margin: 20px 0;
+}
+button{
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+a p{
+    background-color: white;
+    display: inline-block;
+}
+.notInMobile{
+    font-size: 20px;
+}
+.plan h2{
+    margin-top: 0;
+}
+
+.theOnlyClass{
+    top: -60px;
+    background: radial-gradient(white 5%,transparent 75%);
+}
+.theOnlyClass:hover{
+    top: -50px;
+    transition: top 1s ease-out;
+}
+.theOnlyClass:active{
+    top:-30px;
+    transition: top 0.1ms linear;
+}
+@media (min-width: 650px) {
+    .notInMobile{
+        display: none;
+    }
+    .homePageOnly{
+        color: white;
+    }
+    a p{
+        display: none;
+    }
+    .texts .outerUl{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 0;
+    }
+    .texts li img{
+        width: 100px;
+        height: 75px;
+    }
+    .descandantOfHome{
+        height: auto;
+        margin: 20px 0;
+    }
+    .firstHalf{
+        width: 40%;
+        float: right;
+    }
+    .firstHalf .resOnly{
+        width: auto;
+        display: inline-block;
+    }
+    .firstHalf .resOnly li{
+        display: block;
+        margin: 20px 0;
+    }
+    aside{
+        clear: left;
+        display: inline-block;
+    }
+    .mainOne{
+        background: url(../../good-artists-copy-864.jpg);
+    }
+    main{
+        margin: 0;
+        min-height: 950px;
+    }
+    .descandantOfHomeMain{
+        margin: 0;
+    }
+    nav .outerUl{
+        position: relative;
+        flex-direction: row;
+    }
+    nav .innerUl{
+        width: 85%;
+        position: absolute;
+    }
+    nav .outerLi:hover .innerUl{
+        transition: opacity 0.2s ease-in-out;
+        opacity: 1;
+        top: 47px;
+    }
+    nav .outerLi{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    }
+    nav li{
+        height: 50px;
+        border: 2px solid black;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 15px 0;
+        list-style-type: none;
+    }
+    fieldset img{
+        width: 100%;
+        height: 50%;
+        object-fit: fill;
+    }
+    .plan{
+        padding: 0 20px;
+        min-height: 830px;
+    }
+    .texts a:hover span{
+        opacity:1;
+        transition: opacity 1s ease-in-out;
+        text-align: center;
+        left: 200px;
+        top: 350px;
+    }
+    .texts a:hover span img{
+        width: 400px;
+        height: 280px;
+    }
+    .homeHeadOnly{
+        color: white;
+    }
+    .mainOne{
+        background: url(../../good-artists-copy-864.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    nav{
+        position: sticky;
+        top: 5px;
+        width: 100%;
+        margin-bottom: 10px;;
+    }
+    .headingOnly{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1170px) {
+    *{
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .notInMobile{
+        display: none;
+    }
+    .headingOnly{
+        color: white;
+        background: transparent;
+    }
+    a p{
+        display: none;
+    }
+    .plan{
+        min-height: 500px;
+    }
+    .texts .outerUl{
+        width: 300px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    body{
+        background: url(../../nightlight.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 95%;
+        width: 98.5%; */
+    }
+    header h1, header h4{
+        margin: 0;
+    }
+    h1{
+        font-size: 50px;
+    }
+    header{
+        text-align: center;
+        background-color: transparent;
+    }
+    .mainOne{
+        background: url(../../good-artists-copy-864.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    hr{
+        width: 90%;
+    }
+    nav{
+        position: sticky;
+        top: 5px;
+        width: 100%;
+        margin-bottom: 10px;;
+    }
+    fieldset img{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+    nav .innerUl{
+        width: 85%;
+        position: absolute;
+    }
+    nav .outerLi{
+        display: inline-block;
+        position: relative;
+        left: 0;
+    }
+    nav li{
+        border: 2px solid black;
+        width: 100%;
+        padding: 14px;
+        height: 50px;
+        box-sizing: border-box;
+        text-align: center;
+        list-style-type: none;
+    }
+    nav .outerUl{
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: burlywood;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav .outerLi:hover .innerUl{
+        transition: opacity 0.2s ease-in-out;
+        opacity: 1;
+    }
+    nav a{
+        text-decoration: none;
+        color: purple;
+    }
+    nav a:hover{
+        color: black;
+    }
+    footer{
+        background-color: burlywood;
+        width: 100%;
+        margin: auto;
+    }
+    main{
+        min-height: 500px;
+    }
+    main h2{
+        margin-top: 0;
+    }
+    /* .descandantOfHome{
+        color: white;
+    } */
+    .descandantOfHomeMain{
+        background-color: rgb(242, 228, 202);
+        width: 80%;
+        margin: 10px auto 0 auto;
+        /* min-height: 900px; */
+    }
+    .wrapper{
+        width: 80%;
+        margin: 20px auto;
+        padding-top: 10px;
+        /* background-color: rgb(242, 228, 202); */
+    }
+    .medieval{
+        float: left;
+        display: inline;
+        margin: 0;
+    }
+    .changePosi{
+        clear: left;
+        margin-top: 30px;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .normal p{
+        margin-top: 0px;
+        clear: left;
+    }
+    .navCover{
+        width: 100%;
+        margin: 0;
+    }
+    .resumePic{
+        height: 100%;
+    }
+    .texts a:hover span{
+        opacity:1;
+        text-align: center;
+        transition: opacity 1s ease-in-out;
+        left: 520px;
+        top: 350px;
+    }
+}

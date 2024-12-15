@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../../personalBio.css" rel="stylesheet">
+    <script>
+        let og = true;
+        let oldColor;
+        let oldTextColor;
+        let layerThirdHead;
+        let thirdLayerTextHead;
+        function changeColor(){
+            og=!og;
+            let displaybg = document.getElementById("div1");
+            let disTeBg = document.getElementById("div1");
+            let inHead = document.getElementById("headOnly");
+            let inHeadText = document.getElementById("headOnly");
+            if (og){
+                oldColor = "rgb(242, 228, 202)";
+                oldTextColor = "black";
+                layerThirdHead = "white";
+                thirdLayerTextHead = "black";
+            } else {
+                oldColor = "black";
+                oldTextColor = "white";
+                layerThirdHead = 'black';
+                thirdLayerTextHead = "white";
+            }
+            displaybg.style.color = oldTextColor;  
+            disTeBg.style.backgroundColor = oldColor;
+            inHead.style.backgroundColor = layerThirdHead;
+            inHeadText.style.color = thirdLayerTextHead;
+        }
+    </script>
+    <meta name="description" content="This is how I spend my free time">
+</head>
+<body id="headOnly">
+    <div class="wrapper">
+        <header class="headingOnly"><h1>My Hobby</h1></header>
+        <hr>
+        <nav class="navCover">
+            <ul class="outerUl">
+                <li class="outerLi"><a href="../../../homePage.html">Home</a>
+                <ul class="innerUl">
+                    <li class="innerLi"><a href="../../Contact/resume.html">Resume</a></li>
+                    <li class="innerLi"><a href="../../Contact/ContactMe/contactMe.html">Contact me</a></li>
+                </ul>
+                </li>
+                <li class="notInMobile"><a href="../../Contact/resume.html">Resume</a></li>
+                <li class="notInMobile"><a href="../../contactMe.html">Contact me</a></li>
+                <li class="outerLi"><a href="../bucketList.html">Bucket Lists</a>
+                    <ul class="innerUl">
+                        <li class="innerLi"><a href="interestHobby.html">Hobbies</a></li>
+                        <li class="innerLi"><a href="travelPage.html">Travel page</a></li>
+                    </ul>
+                </li>
+                <li class="notInMobile"><a href="interestHobby.html">Hobbies</a></li>
+                <li class="notInMobile"><a href="travelPage.html">Travel page</a></li>
+            </ul>
+        </nav>
+        <div onclick="changeColor()" class="theOnlyClass" style="width: 50px;position:absolute;height: 120px;left: 85%;">
+            <div style="width: 5px;position: absolute;height: 100px;left: 25px;background-color: black;"></div>
+            <div style="width: 10px;position: absolute;top: 95px;left: 22.5px;height: 10px;border-radius: 100px;background-color: black;"></div>
+        </div>
+        <main id="div1">
+            <div class="texts">
+                <h2>Here's my hobby:</h2>
+                <p style="color:rgb(242, 228, 202);">To see the subtitle of pictures, don't turn into dark mode</p>
+                <ul>
+                    <li><a href="../../../../../playVideoG.jpg"><img alt="PlayGames" width="100" height="75" src="../../../../../playVideoG.jpg"><br><p>Play games</p>
+                    <span><img alt="Games" src="../../../../../playVideoG.jpg" width="300" height="200"><br>Play video games</span></a></li>
+                    <li><a href="../../../../../bingeWatching.jpeg"><img width="100" height="75" src="../../../../../bingeWatching.jpg" alt="hobby 2"><br><p>Watch youtube</p>
+                    <span><img src="../../../../../bingeWatching.jpg" alt="hobby2" width="300" height="200"><br>Binge watching</span></a></li>
+                    <li><a href="../../../../../talkWithFriends.jpeg"><img width="100" height="75" src="../../../../../talkWithFriends.jpeg" alt="hobby 3"><br><p>Talk with friends</p>
+                    <span><img src="../../../../../talkWithFriends.jpeg" alt="hobby2" width="300" height="200"><br>Talk with friends</span></a></li>
+                    <li><a href="../../../../../sport.jpg"><img width="100" height="75" src="../../../../../sport.jpg" alt="hobby 2"><br><p>Play sports</p>
+                    <span><img src="../../../../../sport.jpg" alt="hobby2" width="300" height="200"><br>Play sport</span></a></li>    
+                </ul>
+            </div>
+        </main>
+        <footer style="color: black;">
+            <p>Location: <a href="https://langara.ca/" rel="linkToWeb">Langara college</a><br>&copy; Trong Long Tran 2024
+                <div id="upd"></div>
+                <script>
+                    let k = document.lastModified;
+                    document.getElementById('upd').innerHTML = k;
+                </script>
+        </footer>
+    </div>
+</body>
+</html>

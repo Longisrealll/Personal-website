@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="personalBio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('p .hovering').css('color','brown');
+            $('.hovering').on('mouseenter',function(){
+                alert('Located in Vancouver');
+            })
+        });
+    </script>
+        <script>
+            let og = true;
+            let oldColor;
+            let oldTextColor;
+            function changeColor(){
+                og=!og;
+                let displaybg = document.getElementById("div1");
+                let disTeBg = document.getElementById("div1");
+                if (og){
+                    oldColor = "rgb(242, 228, 202)";
+                    oldTextColor = "black";
+                } else {
+                    oldColor = "black";
+                    oldTextColor = "white";
+                }
+                displaybg.style.color = oldTextColor;  
+                disTeBg.style.backgroundColor = oldColor;
+            }
+        </script>
+        <meta name="description" content="This is the brief introduction of Trong Long">
+</head>
+<body class="mainOne">
+    <div class="wrapper">
+        <header class="homeHeadOnly">
+            <h1>Trong Long Tran</h1>
+            <h4>Computer studies<br>Langara college</h4>
+        </header>
+        <hr>
+        <nav class="navCover">
+            <ul class="outerUl">
+                <li class="outerLi"><a href="homePage.html">Home</a>
+                <ul class="innerUl">
+                    <li class="innerLi"><a href="MainTopic/Contact/resume.html">Resume</a></li>
+                    <li class="innerLi"><a href="MainTopic/Contact/ContactMe/contactMe.html">Contact me</a></li>
+                </ul>
+                </li>
+                <li class="notInMobile"><a href="MainTopic/Contact/resume.html">Resume</a></li>
+                <li class="notInMobile"><a href="MainTopic/Contact/ContactMe/contactMe.html">Contact me</a></li>
+                <li class="outerLi"><a href="MainTopic/PersonalInfo/bucketList.html">Bucket Lists</a>
+                    <ul class="innerUl">
+                        <li class="innerLi"><a href="MainTopic/PersonalInfo/LifeExp/interestHobby.html">Hobbies</a></li>
+                        <li class="innerLi"><a href="MainTopic/PersonalInfo/LifeExp/travelPage.html">Travel page</a></li>
+                    </ul>
+                </li>
+                <li class="notInMobile"><a href="MainTopic/PersonalInfo/LifeExp/interestHobby.html">Hobbies</a></li>
+                <li class="notInMobile"><a href="MainTopic/PersonalInfo/LifeExp/travelPage.html">Travel page</a></li>
+            </ul>
+        </nav>
+        <div onclick="changeColor()" class="theOnlyClass" style="width: 50px;position:absolute;height: 120px;left: 90%;">
+            <div style="width: 5px;position: absolute;height: 100px;left: 25px;background-color: black;"></div>
+            <div style="width: 10px;position: absolute;top: 95px;left: 22.5px;height: 10px;border-radius: 100px;background-color: black;"></div>
+        </div>
+        <main id="div1">
+            <img class="usualImg" src="../../yourSID-1-SubnetExercise.jpeg" alt="background">
+            <div class="texts">
+                <h2>Introduction</h2>
+                <p>Hi, my name is <strong>Trong Long</strong>, you can call me <strong>Mark</strong>.</p>
+                <p>I'm currently a full-time student in <a class="hovering" href="#">Langara college</a>, and attending computer study curriculum</p>
+                <h2>More about myself</h2>
+                <p>I have gained many knowledge about servings since I have a quilification in Barista Basic, and culinary basic. Not only qualifications, but also experiences while working in Le Comptoire. This is why I have many interests in this field.</p>
+            </div>
+        </main>
+        <footer>
+            <p>Location: <a href="https://langara.ca/" rel="linkToWeb">Langara college</a><br>&copy; Trong Long Tran 2024</p>
+            <div id="upd"></div>
+            <script>
+                let k = document.lastModified;
+                document.getElementById('upd').innerHTML = k;
+            </script>
+        </footer>
+    </div>
+</body>
+</html>
